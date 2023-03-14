@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>EX06</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>이름</th>
+        <th>나이</th>
+        <th>성별</th>
+        <th>사는 도시</th>
+    </tr>
+    <tr>
+        <!-- jsp로 보면 getter를 부른 것이다.-->
+        <td th:text="${memberVO.name}"></td>
+        <td th:text="${memberVO.age}"></td>
+        <td th:text="${memberVO.gender}"></td>
+        <td th:text="${param.address}"></td>
+        <!--<td th:text="${city}"></td> 강사님 방식-->
+    </tr>
+</table>
+</body>
+</html>

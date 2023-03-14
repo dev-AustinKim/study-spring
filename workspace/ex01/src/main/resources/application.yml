@@ -1,0 +1,4 @@
+#server.port 자동완성 사용.
+server:
+  port: 10000
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>점수등록</title>
+</head>
+<body>
+<form th:action="@{/ex/register}" method="post" th:object="${taskVO}">
+    <input type="text" th:field="*{num}" placeholder="학생번호"> <!--이렇게 하면 productVO.productName이랑 같은 방식이 된다.-->
+    <input type="text" th:field="*{kor}" placeholder="국어"> <!--위에 Object객체(ProductVO)에 필드에 참조하기 위해서 *을 사용-->
+    <input type="text" th:field="*{eng}" placeholder="영어"> <!--th필드는 value까지 채워줘서 만약 productVO의 필드들이 클래스 타입(Integer)이 아닌 기본 자료형(int)을 쓰면 기본값이 input태그에 들어간다.-->
+    <input type="text" th:field="*{math}" placeholder="수학">
+    <button>등록</button>
+</form>
+</body>
+</html>

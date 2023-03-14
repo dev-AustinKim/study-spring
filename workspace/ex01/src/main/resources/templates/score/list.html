@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>점수목록</title>
+</head>
+<body>
+<table border="1" th:object="${taskVO}"> <!--반복되는 값을 th:object에 넣는다. EL문에서 with와 같은 기능-->
+    <tr>
+        <th>학생번호</th>
+        <th>국어</th>
+        <th>영어</th>
+        <th>수학</th>
+        <th>총점</th>
+        <th>평균 점수</th>
+    </tr>
+    <tr>
+        <td th:text="*{num}"></td>
+        <td th:text="*{kor}"></td>
+        <td th:text="*{eng}"></td>
+        <td th:text="*{math}"></td>
+        <td th:text="*{total}"></td>
+        <td th:text="*{average}"></td> <!--화면에서 이렇게 쓰면 getter로 가져온다.-->
+    </tr>
+</table>
+</body>
+</html>
