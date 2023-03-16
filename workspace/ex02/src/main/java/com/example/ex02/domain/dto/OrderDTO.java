@@ -1,4 +1,4 @@
-package com.example.ex02.domain;
+package com.example.ex02.domain.dto;
 
 import lombok.Data;
 import org.springframework.stereotype.Component;

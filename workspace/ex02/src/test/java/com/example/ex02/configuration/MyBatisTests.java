@@ -1,7 +1,6 @@
 package com.example.ex02.configuration;
 
 
-import com.example.ex02.domain.ProductVO;
 import com.example.ex02.mapper.ProductMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.session.SqlSession;
