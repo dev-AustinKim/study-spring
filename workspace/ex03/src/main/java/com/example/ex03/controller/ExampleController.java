@@ -48,7 +48,8 @@ public class ExampleController {
 //    RequestBody는 화면에서 전달하는 값을 나에게 가져올 때 담는 그릇같은 것이다.
 //    우리가 맨 처음에 Model 객체를 담을 그릇으로 보냈듯 화면에서 입력받은 값을 requestBody에 담아서 가져온다.
 //    화면에서 JSON 형식으로 오는데 JSON 형식을 바로 이해 못하니까 @RequestBody를 써줘서 인식하게 해준다.
-//    REST 컨트롤러에서는 화면에서 정보를 받아올 객체에 RequestBody를 쓰는데 일반 컨트롤러에서 ResponseBody를 쓰면 REST 컨트롤러가 된다.
+//    ResponseBody는 HTML요청에 내 DB에 있는 값을 보여줄 때(전달해 줄 떼) 하는 것이고,
+//    RequestBody는 HTML에 있는 값을 내가 요청할 때 어떻게 받을 지에 대해서 쓰는 것이다
     public String ex06(@RequestBody UserVO userVO){
         log.info(userVO.toString());
         return "success";
